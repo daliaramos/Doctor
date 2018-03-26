@@ -1,22 +1,17 @@
 import './styles.css';
 import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { doctorSearch } from './Doctor.js'
-//import { **insert prototype name** } from './Doctor.js';
+import { doctorSearch } from './dDctor.js';
 
-$(document).ready(function() {
-  $("searchDoctor").submit(function(event){
-    event.preventDefault();
+const DS = response => {
+  if (response.data.length == 0 ) {
+    $('#errors').text("ERROR")
+  } else {
+    response.data.forEach(data => {
+      let firstName = data.profile.first_name;
+      // let lastName = data.profile.last_name;
 
-    let newDoctor = new doctorSearch();
-    let promise = newDoctor.DS();
-    promise.then(function(event){
 
-    });
-    // promise.then(function(response){
-    //   let body = JSON.parse(response);
-    //   let array = [];
-    //   body.
-    })
-  });
-});
+  })
+  }
+}
