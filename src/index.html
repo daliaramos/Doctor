@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Doctor</title>
   </head>
   <body>
     <div class='container'>
-      <h1>Doctor</h1>
-      <form class="searchDoctor">
+      <h1>Dr search</h1>
+      <form>
         <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" name="firstName" value="">
+          <label>Enter a Dr Name</label>
+          <input type="text" id="doc">
         </div>
-        <button type="submit" name="button">Enter</button>
-      </form>
-      <div class="viewDoctor">
-      </div>
+    </form>
+    <button type="submit" name="button" class="find">Enter</button>
+        <div id="viewDr">
+
+        </div>
       <div class="errors">
       </div>
     </div>
