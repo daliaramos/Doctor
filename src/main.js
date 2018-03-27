@@ -5,7 +5,7 @@ import { doctorSearch } from './doctor.js';
 
 const drSearch = response => {
   if (response.data.length == 0 ) {
-    $('.errors').text("ERROR")
+    $('.error').text("ERROR")
   } else {
     response.data.forEach(data => {
       let firstName = data.profile.first_name;
